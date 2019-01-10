@@ -64,7 +64,8 @@ class Song
     song = self.new
     song.name = song_name
     song.artist_name = artist_name
-    self.class.all << song
+    song.save
+    
   end
 
   def self.destroy_all
