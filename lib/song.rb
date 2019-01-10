@@ -56,7 +56,7 @@ class Song
   def self.create_from_filename(filename)
 
     combined_name = filename.chomp(".mp3")
-    artist_name_song_name = filename.split("-")
+    artist_name_song_name = combined_name.split("-").join.split("  ")
 
     artist_name = artist_name_song_name[0]
     song_name = artist_name_song_name[1]
