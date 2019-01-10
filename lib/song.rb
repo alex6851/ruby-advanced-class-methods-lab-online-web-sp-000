@@ -43,12 +43,12 @@ class Song
     combined_name = filename.chomp(".mp3")
     artist_name_song_name = combined_name.split("-").join.split("  ")
 
-    name_artist = artist_name_song_name[0]
+    artist_name = artist_name_song_name[0]
     song_name = artist_name_song_name[1]
 
     song = self.new
     song.name = song_name
-    song.artist_name = name_artist
+    song.artist_name = artist_name
     song
   end
 
